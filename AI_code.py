@@ -63,7 +63,7 @@ def wishMe():
         speak("Good Evening!")
 
     # Speak a general introduction for the voice assistant
-    speak("I am a voice assistant. Please tell me how may I help you")
+    speak("I am a voice assistant. How may I help you")
 
 
 def set_reminder(reminder_text):
@@ -201,6 +201,16 @@ if __name__ == "__main__":
 
             # Exit the loop or stop further execution (assuming this code is within a loop)
             break
+        # Check if the phrases "The time," "time," or "whats the time" are present in the user query, regardless of case.
+        elif "what's the time" in query.lower():
+            # Get the current time in the format HH:MM:SS
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
+
+            # Print the current time.
+            print(f"Sir, the time is {strTime}")
+
+            # Speak the current time
+            speak(strTime)
 
         # Check if the user's query contains the phrase "open youtube" in a case-insensitive manner
         elif "open youtube" in query.lower():
