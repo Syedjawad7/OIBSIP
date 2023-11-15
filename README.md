@@ -29,7 +29,7 @@ This is a simple voice assistant implemented in Python, using various libraries 
 ## How to Use
 
 1. Install required libraries: `pip install pyttsx3 SpeechRecognition datetime wikipedia webbrowser requests beautifulsoup4 os`
-2. Run the script: `python voice_assistant.py`
+2. Run the script: `AI_code.py`
 3. Interact with the voice assistant by speaking commands.
 
 ## Acknowledgments
